@@ -4,7 +4,7 @@
              x:Class="Xamarin.ResultPage">
     <ContentPage.Content>
         <StackLayout x:Name="layout">
-
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

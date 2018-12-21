@@ -14,9 +14,7 @@
             <Label Text="給料日まであと〇円使えま"
                    FontSize="Large"
                    HorizontalOptions="Center"/>
-            <Label Text="この金額で〇が買えます"
-                   FontSize="Large"
-                   HorizontalOptions="Center"/>
+           
             <controls:Calendar x:Name="calendarrr"
                            Padding="10,50,10,0" 
                            StartDay="Sunday" 

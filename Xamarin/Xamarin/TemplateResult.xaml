@@ -1,13 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Xamarin.insert2">
+             x:Class="Xamarin.TemplateResult">
     <ContentPage.Content>
-        <StackLayout>
-
-            <Label Text="よく使う金額"
-              VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand"></Label>
+        <StackLayout x:Name="layout" >
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

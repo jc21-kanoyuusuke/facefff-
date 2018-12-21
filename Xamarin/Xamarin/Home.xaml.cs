@@ -78,15 +78,18 @@ namespace Xamarin
             int x = result.Count;
             if (x == 0)
             {
-                await this.Navigation.PushModalAsync(new insert2(calendarrr.SelectedDates));
+                await this.Navigation.PushModalAsync(new settled(calendarrr.SelectedDates));
             }
             else
             {*/
-                await this.Navigation.PushModalAsync(new insert(calendarrr.SelectedDates));
+                   await this.Navigation.PushModalAsync(new insert(calendarrr.SelectedDates));
+                   
             /*}*/
         }
 
         //設定画面ボタンの画面遷移
+
+            //よく使う金額設定に遷移する？
         private async void Button_Clicked(object sender, EventArgs e)
         {
             await this.Navigation.PushModalAsync(new notification());

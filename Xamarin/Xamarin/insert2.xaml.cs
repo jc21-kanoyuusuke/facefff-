@@ -15,6 +15,7 @@ namespace Xamarin
         public insert2()
         {
             InitializeComponent();
+           
         }
 	}
 }

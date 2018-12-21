@@ -51,7 +51,7 @@ namespace Xamarin
         public async void Save(LocationItem item1)
         {
             await App.Database.SaveItemAsync(item1);
-            await DisplayAlert("DATA", "登録しますか","OK");
+            await DisplayAlert("DATA", "登録しました","OK");
         }
 
         private void b1Clicked(object sender, EventArgs e)
