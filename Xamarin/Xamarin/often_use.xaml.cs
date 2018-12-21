@@ -60,8 +60,6 @@ namespace Xamarin
             int kin = int.Parse(tmoney.Text);
             string s = (string)komoku1.SelectedItem;
            
-
-
             Template item = new Template()
             {
                 Iname = s,
@@ -69,6 +67,8 @@ namespace Xamarin
 
             };
             Save(item);
+
+
         }
         public async void Save(Template item1)
         {

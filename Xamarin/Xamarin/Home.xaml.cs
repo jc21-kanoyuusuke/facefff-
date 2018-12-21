@@ -83,6 +83,7 @@ namespace Xamarin
             else
             {*/
                    await this.Navigation.PushModalAsync(new insert(calendarrr.SelectedDates));
+
                    
             /*}*/
         }
