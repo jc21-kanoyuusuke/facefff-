@@ -3,88 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Xamarin.insert2">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout x:Name="layout" >
 
-            <StackLayout Orientation="Horizontal"
-                   HorizontalOptions="Center">
-            <Button Text="テンプレ1 "
-                    FontSize="25"
-                    HorizontalOptions="Start"
-                    WidthRequest="150"
-                    x:Name="T1"/>
-
-
-            <Button Text="テンプレ2"
-                    FontSize="25"
-                    HorizontalOptions="Start"
-                    WidthRequest="150"
-                    x:Name="T2"/>
-            
-            
-            <Button Text="テンプレ3"
-                    FontSize="25"
-                    HorizontalOptions="Start"
-                    WidthRequest="150"
-                    x:Name="T3"/>
-            </StackLayout>
-            
-            <StackLayout Orientation="Horizontal"
-                   HorizontalOptions="Center">
-
-            <Label Text="a" HorizontalOptions="Center"
-                    WidthRequest="150"/>
-            <Label Text="b" HorizontalOptions="Center"
-                    WidthRequest="150"/>
-            <Label Text="c" HorizontalOptions="Center"
-                    WidthRequest="150"/>
-                
-            </StackLayout>
-
-            <StackLayout Orientation="Horizontal"
-                   HorizontalOptions="Center">
-            <Button Text="テンプレ4"
-                    FontSize="25"
-                    HorizontalOptions="Start"
-                    WidthRequest="150"
-                    x:Name="T4"/>
-            
-            
-            <Button Text="テンプレ5"
-                    FontSize="25"
-                    HorizontalOptions="Start"
-                    WidthRequest="150"
-                    x:Name="T5"/>
-            
-            
-            <Button Text="テンプレ6"
-                    FontSize="25"
-                    HorizontalOptions="Start"
-                    WidthRequest="150"
-                    x:Name="T6"/>
-            </StackLayout>
-
-            <StackLayout Orientation="Horizontal"
-                   HorizontalOptions="Center">
-            <Button Text="テンプレ7"
-                    FontSize="25"
-                    HorizontalOptions="Start"
-                    WidthRequest="150"
-                    x:Name="T7"/>
-
-
-            <Button Text="テンプレ8"
-                    FontSize="25"
-                    HorizontalOptions="Start"
-                    WidthRequest="150"
-                    x:Name="T8"/>
-
-
-            <Button Text="テンプレ9"
-                    FontSize="25"
-                    HorizontalOptions="Start"
-                    WidthRequest="150"
-                    x:Name="T9"/>
-            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -91,8 +91,6 @@ namespace Xamarin
             koumoku.Text = b9.Text;
         }
 
-
-
     }
 
 }
