@@ -11,32 +11,21 @@ namespace Xamarin
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class insert2 : ContentPage
     {
-        //public int[] M;
-        //public string[] K;
-        //public Button kk;
-        //public char abc;
-        public insert2()
+        
+        public String dd;
+        public String[] In;
+        public int[] Tm;
+        public int x = 0;
+        //public static List<DateTime> dTime = new List<DateTime>();
+        
+        public insert2()//List<DateTime> dTime)
         {
             InitializeComponent();
+            //ddd.Text = dTime[0].ToString("日付：yyyy年MM月dd日");
+            //dd = dTime[0].ToString("yyyy/MM/dd");
             a();
-            /*OnAppearing();
-            T1.Clicked += T1Clicked;
-            T2.Clicked += T2Clicked;
-            T3.Clicked += T3Clicked;
-            T4.Clicked += T4Clicked;
-            T5.Clicked += T5Clicked;
-            T6.Clicked += T6Clicked;
-            T7.Clicked += T7Clicked;
-            T8.Clicked += T8Clicked;
-            T9.Clicked += T9Clicked;
-            */
-            //kk.Clicked += kkCli;
-        }
-
-        //private void kkCli(object sender, EventArgs e)
-        //{
            
-        //}
+        }
 
         public async void a()
         //protected override async void OnAppearing()
@@ -45,87 +34,52 @@ namespace Xamarin
             var result = await App.Database1.GetItemsAsync();
 
             int size = result.Count;
-
             var lay2 = new StackLayout() { Spacing = 10 };
+           // Button lay5 = new Button();
 
-            //int[] m = new int[size];
-            //string[] k = new string[size];
-            //int x = 0;
-            //var lay3 = new StackLayout();
-            //lay3.Children.Add(new Button() { Text = "location.Iname" });
-            //lay2.Children.Add(lay3);
+
             foreach (var location in result)
             {
-
+                
+                string LT = location.Tmoney.ToString();
                 var lay3 = new StackLayout();
-                //this.kk = new Button() { Text = location.Iname };
-                lay3.Children.Add(new Button() {  Text = location.Iname });
-                //lay3.Children.Add(new Label() { Text =  location.Iname });
+               
+                //Button lay3 = new Button() { Text = LT + " (" + location.Iname + ")" };
 
-                //location.Tmoney = m[x];
-                //location.Iname = k[x];
-                //m[x] = location.Tmoney;
-                //k[x] = location.Iname;
-                //this.M[0] = location.Tmoney;
-                //this.K[0] = location.Iname;
-                //x++;
+                //Button button1 = new Button();
+                lay3.Children.Add(new Button() { Text = LT + " (" + location.Iname + ")" });
 
-
-                //T1.Text = location.Iname;
-                //T2.Text = K[1];
-                //T3.Text = K[2];
-
+               //In[x] = location.Iname;
+               //Tm[x] = location.Tmoney;
+               //x++;
+                //x = location.ID;
                 lay2.Children.Add(lay3);
-                //layout.Children.Add(lay3);
+                //lay5 = lay3;
             }
 
             layout.Children.Add(lay2);
+            //lay5.Clicked += lay5Clicked;
         }
 
-       /* private void T1Clicked(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void T2Clicked(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void T3Clicked(object sender, EventArgs e)
+       /* private void lay5Clicked(object sender, EventArgs e)
         {
             
+            DateTime dt1 = DateTime.Parse(dd);
+            LocationItem item = new LocationItem()
+            {
+                Name = In[x],
+                Spay = Tm[x],
+                Day = dt1
+            };
+            Save(item);
         }
 
-        private void T4Clicked(object sender, EventArgs e)
+        public async void Save(LocationItem item1)
         {
-            
-        }
-
-        private void T5Clicked(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void T6Clicked(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void T7Clicked(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void T8Clicked(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void T9Clicked(object sender, EventArgs e)
-        {
-            
+            await App.Database.SaveItemAsync(item1);
+            await DisplayAlert("DATA", "登録しました","OK");
         }
         */
+        
     }
 }
