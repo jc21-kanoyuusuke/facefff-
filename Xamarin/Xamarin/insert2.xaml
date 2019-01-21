@@ -12,6 +12,31 @@
                FontSize="35"
                VerticalOptions="Center"></Label>
 
+            <Button x:Name="b1"
+                    Text=""></Button>
+            <Button x:Name="b2"
+                    Text=""></Button>
+            <Button x:Name="b3"
+                    Text=""></Button>
+            <Button x:Name="b4"
+                    Text=""></Button>
+            <Button x:Name="b5"
+                    Text=""></Button>
+            <Button x:Name="b6"
+                    Text=""></Button>
+            <Button x:Name="b7"
+                    Text=""></Button>
+            <Button x:Name="b8"
+                    Text=""></Button>
+            <Button x:Name="b9"
+                    Text=""></Button>
+            <Button x:Name="b10"
+                    Text=""></Button>
+            <Button x:Name="b11"
+                    Text=""></Button>
+            <Button x:Name="b12"
+                    Text=""></Button>
+
             <StackLayout x:Name="layout" >
 
             </StackLayout>

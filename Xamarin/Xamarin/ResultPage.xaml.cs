@@ -32,7 +32,7 @@ namespace Xamarin
             {
                 //loc.Num = loc.Spay + loc.Longitude;
             }
-            await App.Database.DeleteItemAsync(result[1]);
+            //await App.Database.DeleteItemAsync(result[1]);
             /*foreach(var locat in result){
                 await App.Database.DeleteItemAsync(locat);
             }*/
@@ -40,7 +40,7 @@ namespace Xamarin
             foreach (var location in result)
             {
                 var layout3 = new StackLayout();
-                layout3.Children.Add(new Label() { Text = "name:" + location.ID });
+                layout3.Children.Add(new Label() { Text = "No:" + location.ID });
                 layout3.Children.Add(new Label() { Text = "Spay:" + location.Spay });
                 layout3.Children.Add(new Label() { Text = "Name:" + location.Name });
                 layout3.Children.Add(new Label() { Text = "Day:" + location.Day });
